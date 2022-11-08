@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   );
 
   const handleChange = React.useCallback(
-    (index: number) => (name: keyof DistortionItem, value: number | string) => {
+    (index: number) => (name: string, value: number | string) => {
       setData((prev) => {
         const newData = [...prev];
         newData[index] = {
